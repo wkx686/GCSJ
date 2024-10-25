@@ -2,6 +2,6 @@
 
 前端：HTML、CSS（vs code）
 
-后端：JAVA (eclipse)
+后端：JAVA、PHP (vs code、phpstudy)
 
 数据库：Mysql
