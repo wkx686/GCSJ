@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/back1.jpg'); /* 背景图 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* 视口高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px; /* 登录框宽度 */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%; /* 输入框宽度 */
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%; /* 按钮宽度 */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #feef9997; /* 按钮颜色 */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffec41d6; /* 鼠标悬停时的颜色 */
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    color: red; /* 错误信息的颜色 */
+}
