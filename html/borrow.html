@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="zh">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>信息提交</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+        }  
+
+        h1 {  
+            text-align: center;  
+        }   
+
+        form {  
+            max-width: 400px;  
+            margin: 0 auto;  
+            padding: 20px;  
+            border: 1px solid #ccc;  
+            border-radius: 5px;  
+        }  
+
+        label {  
+            display: block;  
+            margin-bottom: 5px;  
+        }  
+
+        input[type="text"],  
+        input[type="date"] {  
+            width: 100%;  
+            padding: 8px;  
+            margin-bottom: 15px;  
+            border: 1px solid #ccc;  
+            border-radius: 3px;  
+        }  
+
+        input[type="submit"],  
+        .jump-button {  
+            background-color: #4CAF50;  
+            color: white;  
+            padding: 10px 15px;  
+            border: none;  
+            border-radius: 3px;  
+            cursor: pointer;  
+            margin-top: 10px;
+            margin-right: 10px;
+        }  
+
+        .button-container {  
+            display: flex;
+            justify-content: center;
+        }  
+    </style>  
+    <script>  
+        function handleSubmit(event) {  
+            event.preventDefault();  
+            alert("借书成功");  
+            setTimeout(function() {  
+                window.location.href = "http://127.0.0.1/html/kucun.html";  
+            }, 1000);  
+        }  
+        
+        function handleJump() {  
+            window.location.href = "http://127.0.0.1/html/zhuye.html";
+        }  
+    </script>  
+</head>  
+
+<body>  
+    <h1>请完善以下信息，记得及时归还书籍哦</h1>  
+    <form onsubmit="handleSubmit(event)">  
+        <label for="name">名字：</label>  
+        <input type="text" id="name" name="name" placeholder="请输入名字" required><br>  
+
+        <label for="phone">电话：</label>  
+        <input type="text" id="phone" name="phone" placeholder="请输入电话" required><br>  
+
+        <label for="return_date">归还日期：</label>  
+        <input type="date" id="return_date" name="return_date" required><br>  
+
+        <div class="button-container">  
+            <input type="submit" value="确定">  
+            <button type="button" class="jump-button" onclick="handleJump()">返回主页</button>  
+        </div>  
+    </form>  
+</body>  
+</html>
