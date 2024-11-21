@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;   /*设置表格边框形式*/
+}
+table, th, td {
+    border: 1px solid black;    /*同时设置宽、样式、颜色*/
+}
+th, td {
+    padding: 10px;   /*内边距*/
+    text-align: center;
+}
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin: 5px 0;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;   /*鼠标经过，变为手指*/
+}
