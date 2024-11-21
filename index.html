@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>图书管理系统登录</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>图书管理系统</h1>
+            <h2>请登录</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">登录</button>
+                <div id="loading" style="display: none;">加载中...</div>
+            </form>
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
