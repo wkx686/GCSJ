@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin: 5px 0;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
