@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员后台</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+      .login-container {
+            max-width: 300px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #aaa;
+        }
+
+      .login-container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+      .login-container button {
+            width: 98%;
+            padding: 10px;
+            background-color: #0072fd;
+            color: white;
+            border: none;
+        }
+
+      .background {
+            background-image: url(../img/back1.jpg);
+            background-size: 100%;
+        }
+
+       .return-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 8px 15px;
+            background-color: #0072fd;
+            color: white;
+            border: none;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body class="background">
+    <a href="http://192.168.100.128/html/zhuye.html" class="return-button">返回</a>
+    <div class="login-container">
+        <h2>后台管理</h2>
+        <form onsubmit="return validateLogin()">    <!--表单绑定validateLogin函数-->
+            <input type="text" id="username" placeholder="用户名" required>
+            <input type="password" id="password" placeholder="密码" required>
+            <button type="submit">登录</button>
+        </form>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const username = document.getElementById("username").value;   //获取输入的内容
+            const password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "admin") {
+                window.location.href = "http://192.168.100.128/admin/houtai.html";
+                return false;
+            } else {
+                alert("用户名或密码错误");
+                return false;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
